@@ -10,6 +10,8 @@ docker build -t pupdock .
 
 docker run pupdock
 
+docker run --security-opt seccomp=chrome.json pupdock
+
 docker container ls -a
 
 docker container ls -l -q
